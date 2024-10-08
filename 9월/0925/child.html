@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* li중 첫번째 자식에게 #aaa 배경색 */
+        ul li:first-child{background-color: #aaa;} 
+        
+        /* li중 마지막 자식에게 배경색 노랑 */
+        ul li:last-child{background-color: yellow;}
+        
+         /* nth 순서 지정 */
+         ul li:nth-child(3){background-color: red;}
+       
+        /* odd 홀수 */
+        ul li:nth-child(odd){background-color: red;}
+        
+        /* even 짝수 */
+        ul li:nth-child(even){background-color: red;}
+    </style>
+</head>
+<body>
+    <ul>
+        <li>첫번째</li>
+        <li>두번째</li>
+        <li>세번째</li>
+        <li>네번째</li>
+        <li>다섯번째</li>
+        <li>여섯번째</li>
+    </ul>
+</body>
+</html>

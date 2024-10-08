@@ -1,0 +1,13 @@
+*{margin: 0;padding: 0;}
+
+div .wrap{
+    width: 900px;
+    margin: 0 auto;
+}
+header{
+    display: block;
+    unicode-bidi: isolate;
+    position: relative;
+    height: 300px;
+    background-image: url(../images/top.jpg) no-repeat 0 0 cover;
+}

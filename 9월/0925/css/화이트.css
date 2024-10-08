@@ -1,0 +1,111 @@
+*{margin: 0; padding: 0;}
+.wrap{
+    width: 1070px;
+    height: 800px;
+    margin: 30px auto 0;
+    border: 1px solid red;
+    position: relative;
+}
+
+h2{padding: 60px 0 30px 0;}
+.box{
+    width: 260px;
+    height: 260px;
+    position: absolute;
+    display: none;
+}
+.box img{display: block;}
+
+.box1{
+    display: block;
+    top:0;
+    left: 0;
+}
+.box2{
+    display: block;
+    width: 260px;
+    height: 520px;
+    top:0;
+    left: 270px;
+}
+.box3{
+    display: block;
+    top:0;
+    left: 540px;
+}
+.box4{
+    display: block;
+    top:0;
+    right:0;
+}
+.box5{
+    display: block;
+    top:270px;
+    left: 0;
+}
+.box6{
+    display: block;
+    width: 520px;
+    height: 260px;
+    top:270px;
+    left: 540px;
+}
+.box7{
+    display: block;
+    top:540px;
+    left: 0;
+}
+.box8{
+    display: block;
+    width: 520px;
+    height: 260px;
+    bottom:0;
+    left: 270px;
+}
+.box9{
+    display: block;
+    top:540px;
+    right:0;
+}
+.box::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 255, 0.7);
+    transition: all 0.5s;
+
+}
+.box:hover::before{
+    width: 100%;
+}
+.box6::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height:0;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 255, 0.7);
+    transition: all 0.5s;
+
+}
+.box6:hover::before{
+    height: 100%;
+}
+.box8::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height:0;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 255, 0.7);
+    transition: all 0.5s;
+
+}
+.box8:hover::before{
+    height: 100%;
+}

@@ -1,0 +1,73 @@
+*{margin: 0; padding: 0;}
+#container{
+    width: 1200px;
+    border: 10px solid #333;
+    margin: 0 auto;
+    
+    
+}
+header{
+    /* width: 100%; */
+    height: 120px;
+    background-color: cadetblue;
+   
+}
+nav{
+    height: 70px;
+    background-color: chocolate;
+}
+nav ul{
+    list-style: none;
+    
+}
+nav ul li{
+    float: left;
+    /* 바깥여백 margin은 li에 준다 */
+    margin-left: 70px;
+    margin-top: 10px;
+}
+nav ul li a{
+    /* a태그는 인라인 요소 기본적으로 넓이 높이를 줄 수 없기때문에 디스플레이 블럭 필수 */
+    /* a 너비와 높이를 주면 li크기와 동일해진다. */
+    display: block;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    /* 높이와 줄간격을 동일하게 주면 세로 중앙정렬 */
+    /* background-color: yellow; */
+    text-align: center;
+    /* 가로 가운데 정렬 */
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+nav li a:hover{
+    background-color: yellow;
+    color: black;
+    border-radius: 25px; /*또는 50%*/
+
+}
+.main{
+    /* overflow: hidden;  또는 */
+    height: 600px;
+}
+aside{
+    width: 300px;
+    height: 600px;
+    background-color: burlywood;
+    float: left;
+}
+section{
+    width: 900px;
+    height: 600px;
+    background-color: cornflowerblue;
+    float: left;
+}
+footer{
+    /* clear: both; float 해제, 전체높이 확보 가능 */
+    width: 100%;
+    height: 100px;
+    background-color: darkblue;
+    margin-top: 300px; /* 마진탑 기능 X */
+    
+}

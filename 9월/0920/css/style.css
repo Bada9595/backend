@@ -1,0 +1,96 @@
+*{margin: 0;padding: 0;}
+/* 모든요소에 마진과 패딩을 0 */
+#container{
+    width: 800px;
+    margin: 0 auto;
+    /* 전체널비 800 중앙정렬 */
+}
+header{
+    background-color: #f46075;
+    overflow: hidden;
+    padding: 10px 0;
+}
+header h1{
+    float:left;
+    margin-top: 30px;
+    margin-left: 50px;
+    color: #fff;
+}
+header img{
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+nav{
+    height: 60px;
+    background-color: #ccc;
+}
+nav ul{list-style: none;}
+
+nav ul li{
+    float: left;
+    margin-left: 35px;
+    margin-top: 10px;
+}
+nav ul li a{
+    display: block;
+    /* 인라인요소로 넓이 높이를 줄 수 있도록 만들어줌 */
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px; /*위아래 가운데 정렬*/
+    color: black;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    background-color: #f46075;
+    color: #fff;
+    border-radius: 20px;
+}
+section{
+    width: 550px;
+    height: 550px;
+    background-color: skyblue;
+   float: left;
+}
+section h2{
+    text-align: center;
+    padding: 10px 0;
+}
+section article{
+    width: 210px;
+    height: 200px;
+    border: 1px solid #333;
+    background: white;
+    float: left;
+    padding: 10px;
+    margin: 0 0 15px 30px;
+}
+article h3{
+    background: url(../img/bg.png) no-repeat;
+    padding-left: 30px;
+}
+section article p{
+    font-size: 12px;
+    margin-top: 10px;
+}
+aside{
+    width: 250px;
+    height: 550px;
+    background-color: #ffffcc;
+    float: right;
+    text-align: center;
+}
+.main{overflow: hidden;}
+
+aside h2{
+    padding: 10px 0;
+}
+
+footer{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+}

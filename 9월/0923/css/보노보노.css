@@ -1,0 +1,93 @@
+*{margin: 0; padding: 0;}
+.bigbox{
+    width: 500px;
+    height: 500px;
+    border: 1px dashed #333;
+    margin: 100px auto 0;
+    position: relative;
+}
+.face{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border: 10px solid #333;
+    background-color: rgb(76, 169, 245);
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+.eyeball{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 50%;
+    top: 180px;
+}
+.eyeball.left{left: 100px;}
+.eyeball.right{right: 100px;}
+.nose{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 50%;
+    top: 280px;
+    left: 50%;
+    margin-left: -20px;
+    z-index: 2;
+}
+.mouth{
+    position: absolute;
+    width: 100px;
+    height: 80px;
+    border: 3px solid black;
+    background-color: #fff;
+    border-radius: 50%;
+    top: 300px;
+}
+.mouth.left{
+    left: 30%;
+    transform: rotate(-45deg);
+}
+.mouth.right{
+    right: 30%;
+    transform: rotate(45deg);
+    z-index: 1;
+}
+.su{
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    background-color: black;
+    z-index: 1;
+}
+.su.left-line1{
+    top: 330px;
+    left: 20%;
+    transform: rotate(10deg);
+}
+.su.left-line2{
+    top: 345px;
+    left: 20%;
+}
+.su.left-line3{
+    top: 360px;
+    left: 20%;
+    transform: rotate(-10deg);
+}
+.su.right-line1{
+    top: 330px;
+    right: 20%;
+    transform: rotate(-10deg);
+}
+.su.right-line2{
+    top: 345px;
+    right: 20%;
+}
+.su.right-line3{
+    top: 360px;
+    right: 20%;
+    transform: rotate(10deg);
+}
