@@ -12,6 +12,14 @@
    margin: 15px auto;
    border: 1px solid #333;
 }
+.bbox{
+   display: flex;
+   flex-wrap: wrap;
+   /* display:flex --> 넓이와 높이를 주어도 무시하고 너비에 맞춰 한줄로 나열한다.
+   따라서  flex-wrap: wrap;를 넣어주면 여러줄로 나열한다.
+   */
+}
+
 .bigbox h2{
    text-align: center;
    margin: 30px 0 40px;
@@ -23,7 +31,6 @@
    padding: 10px 15px 0;
    margin-left: 51px;
    margin-bottom: 30px;
-   float: left;
    border: 1px solid #333;
    text-align: justify;
 }
@@ -48,6 +55,7 @@
 <body>
     <div class="bigbox">
         <h2><img src="image (8).png">꽃의 종류</h2>
+        <div class="bbox">
            <div class="box box1">
               <h3> 해바라기</h3>
               <p>
@@ -90,7 +98,8 @@
                  셈파플로렌스종은 사철 꽃이 피므로 사철 베고니아라고도 하며 햇빛을 
                  많이 받을수록 꽃이 많이 핀다.
               </p>
-           </div>   
+           </div>  
+         </div> 
      </div>
 </body>
 </html>
