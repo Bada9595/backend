@@ -3,79 +3,21 @@ ul,li{list-style: none;}
 a{text-decoration: none; color: #333;}
 
 section{
-    width: 1700px;
-    margin: 0 auto;
-}
-.title{
-    margin-bottom: 30px;
+    width: 1600px;
+    height: 913px;
+    margin: 100px auto;
 }
 h1{
-    font-size: 35px;
+    font-size: 50px;
+    margin-bottom: 40px;
 }
-.menu{
-    width: 1700px;
-    height: 30px;
-    border-bottom: 1px solid #ccc;
-}
-.menu li{
+.menu ul li{
     float: left;
-    margin-right: 20px;
-}
-.menu li .main{
-    color: black;
-}
-.menu li a{
-    color: #e0d7d4;
+    padding: 20px 30px 20px 0;
     font-weight: bold;
+    font-size: 20px;
 }
-.menu li:nth-child(2),
-.menu li:nth-child(3){
-    list-style-type: disc;
-    color: #e0d7d4;
-}
-.inner{
-    width: 1700px;
-    height: 672px;
-    padding-top: 20px;
-}
-.frame{
-    width: 398px;
-}
-.inner ul{
-    display: flex;
-    justify-content: space-between;
-}
-.inner > ul > li{
-    width: 398px;
-    height: 672px;
-    
-}
-.inner ul li .frame{
-    width: 398px;
-    height: 398px;
-    overflow: hidden;
-    border-radius: 20px;
-
-}
-.inner ul li .frame img{
-    width: 398px;
-    height: 398px;
-    transition: all 0.3s;
-}
-.inner ul li .frame:hover img{
-    transform: scale(1.1);
-}
-.content{
-    padding-top: 20px;
-}
-.caption{
-    display: inline-block;
-    padding: 5px 10px;
-    background-color: orange;
-    color: #fff;
-    border-radius: 20px;
-}
-.content h4{
-    padding: 23px 0;
-    font-size: 25px;
+.menu ul li .main{color: black;}
+.menu ul li a{
+    color: #d4d4d4;
 }
