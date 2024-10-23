@@ -4,32 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/c2.css">
 </head>
 <body>
-    <div id="wrap">
-        <div class="bigbox">
-            <div class="left">
-                <img src="img/intro_logo.png" alt="왼쪽로고">
+    <div class="wrap">
+        <div class="content">
+            <div class="logo"><img src="img/intro_logo.png" alt=""></div>
+            <div class="txt">
+                <img src="img/intro_img.png" alt="">
+                <p><span>이탈리안 파스타의 캐주얼한 해석</span><br>
+                    본질만 담은 합리적인 가격으로 맛있는 파스타와 잔와인까지,<br>
+                    부담없이 즐기고 가실 수 있는 곳입니다.
+                </p>
             </div>
-            <div class="r_top">
-                <p><img src="img/intro_img.png" alt=""></p>
-                <h3>이탈리안 파스타의 캐주얼한 해석</h3>
-                <p>본질만 담은 합리적인 가격으로 맛있는 파스타와 잔와인까지,</p>
-                <p>언제나 부담 없이 즐기고 가실 수 있는 곳입니다.</p>
-            </div>
-            <div class="r_bottom">
+            <div class="button">
                 <ul>
                     <li>
-                        <a href="#">
-                           <img src="img/intro_slide_ico1.png" alt=""
-                           data-off="img/intro_slide_ico1.png"
-                           data-on="img/intro_slide_ico1_on.png">
+                        <a href=""> 
+                            <img src="img/intro_slide_ico1.png" alt=""
+                            data-off="img/intro_slide_ico1.png"
+                            data-on="img/intro_slide_ico1_on.png">
                         </a>
                         <p>좋은 식재료</p>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="">  
                             <img src="img/intro_slide_ico2.png" alt=""
                             data-off="img/intro_slide_ico2.png"
                             data-on="img/hover ico2_on.png">
@@ -37,16 +36,16 @@
                         <p>스마트한 가격</p>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="">
                             <img src="img/intro_slide_ico3.png" alt=""
                             data-off="img/intro_slide_ico3.png"
                             data-on="img/hover ico3_on.png">
                         </a>
-                        <p>트랜디한 음식</p>
+                        <p>트렌디한 음식</p>
                     </li>
                     <li>
-                        <a href="#">
-                            <img src="img/intro_slide_ico4.png" alt="" 
+                        <a href="">
+                            <img src="img/intro_slide_ico4.png" alt=""
                             data-off="img/intro_slide_ico4.png"
                             data-on="img/hover ico4_on.png">
                         </a>
@@ -55,11 +54,12 @@
                 </ul>
             </div>
         </div>
+
     </div>
 </body>
 </html>
 <script>
-    const slideTabs = document.querySelectorAll('.r_bottom ul li a img');
+    const slideTabs = document.querySelectorAll('.button ul li a img');
     slideTabs.forEach(function(img){
         img.addEventListener('mouseover',function(){
             const newSrc = img.getAttribute('data-on');
