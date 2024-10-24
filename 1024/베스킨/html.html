@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        body{background-color: #252422;}
+        div{
+            width: 395px;
+            height: 165px;
+            margin: 50px auto;
+            overflow: hidden;
+        }
+        dl{
+            width: 395px;
+            height: 165px;
+        }
+        dt{
+            width: 25px;
+            height: 165px;
+            float: left;
+        }
+        dt span{
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-indent: -9999px;
+        }
+        dt span.over{cursor: pointer;}
+        dt span.seleted{cursor: default;}
+        dd{
+            width: 320px;
+            height: 160px;
+            float: left;
+            overflow: hidden;
+        }
+        dd img{
+            float: left;
+            width: 320px;
+            height: 160px;
+        }
+        dt{background: url(blue01.png) no-repeat 0 0;}
+        dt .over{background: url(pink01.png) no-repeat 0 0;}
+        dt .seleted{background: url(orange01.png) no-repeat 0 0;}
+
+    </style>
+    <script>
+        $(function(){
+            $('dd:not(:first)').css('width','0px');
+            $('dt:first span').addClass('seleted');
+            $('dl dt').click(function(){
+                var w = $(this).next('dd').css('width');
+                if(w == '0px'){
+                    $('dd').slideUp();
+                    $(this).next('dd').css('width','320px');
+                    $('dt').removeClass('seleted');
+                    $(this).find('span').addClass('seleted');
+                }
+            });
+
+            $('dl dt').mouseover(function(){
+                $(this).find('span').addClass('over')
+            });
+            $('dl dt').mouseover(function(){
+                $(this).find('span').removeClass('over')
+            });
+
+
+
+
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <dl>
+            <dt><span>1</span></dt>
+            <dd><img src="menuimg01.jpg" alt=""></dd>
+            <dt><span>2</span></dt>
+            <dd><img src="menuimg02.jpg" alt=""></dd>
+            <dt><span>3</span></dt>
+            <dd><img src="menuimg03.jpg" alt=""></dd>
+        </dl>
+    </div>
+</body>
+</html>
