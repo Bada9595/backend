@@ -4,22 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="http://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(function(){
+            $('dd:not(:first)').css('width','0px');
+            $('dt:first span').addClass('seleted');
+
+            $('dl dt').click(function(){
+                var w = $(this).next('dd').css('width');
+                if(w == '0px'){
+                    $('dd').css('width','0px');
+                    $(this).next('dd').css('width','320px');
+                    $('dt span').removeClass('seleted');
+                    $(this).find('span').addClass('seleted');
+                }
+            });
+
+            $('dl dt').mouseover(function(){
+                $(this).find('span').addClass('over')
+            });
+            $('dl dt').mouseout(function(){
+                $(this).find('span').removeClass('over')
+            });
+
+        });
+    </script>
     <style>
         *{margin: 0;padding: 0;}
         body{background-color: #252422;}
         div{
             width: 395px;
-            height: 165px;
+            height: 160px;
             margin: 50px auto;
             overflow: hidden;
         }
         dl{
             width: 395px;
-            height: 165px;
+            height: 160px;
         }
         dt{
             width: 25px;
-            height: 165px;
+            height: 160px;
             float: left;
         }
         dt span{
@@ -34,6 +59,7 @@
             width: 320px;
             height: 160px;
             float: left;
+            background: #d4d0c8;
             overflow: hidden;
         }
         dd img{
@@ -42,36 +68,11 @@
             height: 160px;
         }
         dt{background: url(blue01.png) no-repeat 0 0;}
-        dt .over{background: url(pink01.png) no-repeat 0 0;}
-        dt .seleted{background: url(orange01.png) no-repeat 0 0;}
+        dt span.over{background: url(pink01.png) no-repeat 0 0;}
+        dt span.seleted{background: url(orange01.png) no-repeat 0 0;}
 
     </style>
-    <script>
-        $(function(){
-            $('dd:not(:first)').css('width','0px');
-            $('dt:first span').addClass('seleted');
-            $('dl dt').click(function(){
-                var w = $(this).next('dd').css('width');
-                if(w == '0px'){
-                    $('dd').slideUp();
-                    $(this).next('dd').css('width','320px');
-                    $('dt').removeClass('seleted');
-                    $(this).find('span').addClass('seleted');
-                }
-            });
-
-            $('dl dt').mouseover(function(){
-                $(this).find('span').addClass('over')
-            });
-            $('dl dt').mouseover(function(){
-                $(this).find('span').removeClass('over')
-            });
-
-
-
-
-        });
-    </script>
+   
 </head>
 <body>
     <div>
