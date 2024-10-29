@@ -15,25 +15,39 @@ a{text-decoration: none;color: #333;}
     top: 20px;
     left: 25px;
 }
-.slideBtn p{
+.slideBtn > p{
     position: absolute;
-    top: 20px;
-    right: 100px;
+    top: 25px;
+    right: 140px;
+    font-weight: bold;
 }
-.slideBtn p a{
-    display: block;
-    width: 20px;
-    height: 20px;
+.slideBtn > p strong{
+    color: #003675;
+}
+.slideBtn > p:nth-child(2){
+    position: absolute;
+    top: 30px;
+    right: 20px;
+}
+
+.slideBtn p .prev{
+    background: url(../img/ico_16_prev.png) no-repeat 0 0 / 12px;
 
 }
-.slideBtn p .prev{
-    background: url(../img/ico_16_prev.png) no-repeat 0 0;
-}
 .slideBtn p .pause{
-    background: url(../img/ico_16_pause.png) no-repeat 0 0;
+    background: url(../img/ico_16_pause.png) no-repeat 0 0 / 12px;
 }
+.slideBtn p .pause.on{
+    background: url(../img/ico_16_play.png) no-repeat 0 0 / 12px;
+}
+
 .slideBtn p .next{
-    background: url(../img/ico_16_next.png) no-repeat ;
+    background: url(../img/ico_16_next.png) no-repeat 0 0 / 12px;
+}
+.slideBtn p a{
+    display: inline-block;
+    width: 26px;
+    height: 30px;
 }
 .frame{
     width: 356px;
@@ -43,12 +57,20 @@ a{text-decoration: none;color: #333;}
     position: absolute;
     top: 60px;
     left: 30px;
+    border-radius: 10px;
+    overflow: hidden;
 }
 .frame ul{
     width: 1424px;
 }
 .frame ul li{
-    float: left;
+    width: 356px;
+    height: 234px;
+    position: absolute;
+    left: 100%;
+}
+.frame ul li:nth-child(1){
+left: 0;
 }
 .frame ul li a{
     display: inline-block;
