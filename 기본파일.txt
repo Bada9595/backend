@@ -14,3 +14,6 @@ https://whaleon.us/o/CSqqEb/483e7266af284010a0c3568c26acdef2
 
 크롬 색 추출
       이미지 다운로드
+
+날씨api key : cf22c92c8fe27c1fb3650800258f7866
+api call : http://api.openweathermap.org/data/2.5/forecast?id=524901&appid={API key}
