@@ -1,5 +1,6 @@
+
 function UserCard(props){
-    const cardStyle = {
+    const cardStyle={
         backgroundColor : props.isActive ? 'lightgreen' : 'lightgray',
         padding: '10px',
         margin: '10px',
@@ -12,9 +13,11 @@ function UserCard(props){
             <p>직업: {props.job}</p>
             <p>상태: {props.isActive ? "활성" : "비활성"}</p>
         </div>
-    );    
+
+    );
+
 }
-//기본값 설정
+// 기본값 설정
 UserCard.defaultProps = {
     name: "이름 없음",
     age: "나이 정보 없음",
